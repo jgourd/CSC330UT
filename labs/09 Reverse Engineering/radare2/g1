@@ -1,0 +1,1 @@
+{"Title":"Disassembly","Cmd":"pd","x":0,"y":1,"w":112,"h":38},{"Title":"Stack","Cmd":"pxW 36 @rbp-0x20","x":111,"y":1,"w":80,"h":17},{"Title":"Registers","Cmd":"dr","x":111,"y":17,"w":41,"h":22},{"Title":"RFLAGS","Cmd":"drcq","x":151,"y":17,"w":40,"h":22}

@@ -1,0 +1,8 @@
+This is encrypted using the Caesar cipher with the alphabet: ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789?/>.<,"':;|\}]{[+=_-)(*&^%$#@!~`abcdefghijklmnopqrstuvwxyz
+The uppercase alphabet: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+The lowercase alphabet: abcdefghijklmnopqrstuvwxyz
+The digits: 0123456789
+The symbols: `~!@#$%^&*()-_=+[{]}\|;:'",<.>/?
+A mistaqueke, so I backspaced to fix it.
+Spaces	are	replaced	with	tabs	on	this	line.
+END.

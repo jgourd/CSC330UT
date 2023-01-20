@@ -1,0 +1,5 @@
+key
+symmetric
+superman
+MySymmetricKey
+racecar

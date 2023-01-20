@@ -1,0 +1,8 @@
+This is encrypted using XOR
+The uppercase alphabet: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+The lowercase alphabet: abcdefghijklmnopqrstuvwxyz
+The digits: 0123456789
+The symbols: `~!@#$%^&*()-_=+[{]}\|;:'",<.>/?
+A mistaqueke, so I backspaced to fix it.
+Spaces	are	replaced	with	tabs	on	this	line.
+END.
