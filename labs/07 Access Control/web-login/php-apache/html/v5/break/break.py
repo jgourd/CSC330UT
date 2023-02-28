@@ -1,3 +1,8 @@
+# need to install bcrypt via:
+#  sudo apt install python3-bcrypt
+#  -and/or-
+#  pip3 install bcrypt
+
 from bcrypt import checkpw
 
 DICTIONARY = "words.txt"
