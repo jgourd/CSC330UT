@@ -10,7 +10,7 @@ IP = "localhost"
 PORT = 21
 USER = "anonymous"
 PASSWORD = ""
-FOLDER = "/incoming"
+FOLDER = ""
 USE_PASSIVE = True # set to False if the connection times out
 
 # connect and login to the FTP server

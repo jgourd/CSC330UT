@@ -8,7 +8,7 @@
 
 # VARIABLES
 # the folder to create files in
-DIR=~/Downloads/CSC330UT/labs/05\ Storage\ Covert\ Channel/ftp/10
+DIR=/srv/ftp/10
 # the file that contains the message to encode
 MESSAGE_FILE=message-10.txt
 # the minimum and maximum length of filenames created
