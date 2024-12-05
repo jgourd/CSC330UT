@@ -3,16 +3,18 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "jgourd/CSC330UT"
+  config.vm.box_version = "2024.25.01"
 
-  config.vm.provider "virtualbox" do |v|
-    v.name = "CSC330UT"
+  config.vm.provider "vmware_desktop" do |v|
     v.gui = true
-    v.memory = 2048
-    v.customize [ "modifyvm", :id, "--clipboard", "bidirectional" ]
+    v.vmx["displayname"] = "CSC330-ARM64"
+    v.vmx["memsize"] = "4096"
+    v.vmx["numvcpus"] = 2
+#    v.vmx["ethernet0.connectionType"] = "bridged"
+#    v.vmx["ethernet1.connectionType"] = "nat"
   end
 
 #  config.vm.network "forwarded_port", id: "http", guest: 80, host: 8080
-#  config.vm.network "public_network", ip: "10.1.0.x", netmask: "8", gateway: "10.0.0.1"
 #  config.vm.network "public_network"
 
   config.vm.provision "shell", inline: "cd ~/Downloads/CSC330UT && git pull", privileged: false
