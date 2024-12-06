@@ -19,6 +19,12 @@ MAX_FILE_LEN=32
 # DO NOT EDIT BELOW THIS LINE
 #############################
 
+# make sure this is run as root
+if [ `whoami` != "root" ]; then
+    echo "Run this as root; i.e., use sudo"
+    exit
+fi
+
 # create the directory if it doesn't exist
 if [ ! -d "$DIR" ]; then
 	mkdir -p "$DIR"
