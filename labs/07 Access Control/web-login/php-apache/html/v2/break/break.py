@@ -12,15 +12,15 @@ with open(DICTIONARY, "r") as file:
     words = file.read().splitlines()
 
 for password in words:
-    print(f"Trying: {password} on {db_password}: ", end="")
+    print(f"Trying: {password}")
 
     # decrypt the password with the known symmetric key
     cipher = AES.new((bytes(password, "utf-8") + (b"\x00" * (32 - len(password))))[:32], AES.MODE_CBC, b"\x00" * 16)
     try:
         plain_password = unpad(cipher.decrypt(b64decode(db_password)), 16)
+        # display the results
+        print(f"**SUCCESS! ({plain_password.decode('utf-8')})")
+        break
     except:
-        plain_password = b""
-
-    # display the results
-    print(f"{plain_password.decode('utf-8')}")
+        pass
 
