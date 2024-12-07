@@ -5,7 +5,7 @@ from base64 import b64decode
 DICTIONARY = "words.txt";
 
 # enter the DB password below
-db_password = "0Iw5SIdDykdW0iqH5GIzsA==";
+db_password = "";
 
 # grab the dictionary words
 with open(DICTIONARY, "r") as file:

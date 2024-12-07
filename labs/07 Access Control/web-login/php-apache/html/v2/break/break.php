@@ -3,7 +3,7 @@
 $DICTIONARY = "words.txt";
 
 // enter the DB password below
-$db_password = "0Iw5SIdDykdW0iqH5GIzsA==";
+$db_password = "";
 
 // grab the dictionary words
 $words = file($DICTIONARY, FILE_IGNORE_NEW_LINES);
