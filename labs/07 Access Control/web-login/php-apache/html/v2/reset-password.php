@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             mysqli_stmt_bind_param($stmt, "si", $param_password, $param_id);
 
             // set parameters
-            $param_password = openssl_encrypt($new_password, "aes-256-ctr", "MySymmetricKey");
+            $param_password = openssl_encrypt($new_password, "aes-256-cbc", "MySymmetricKey");
             $param_id = $_SESSION["id"];
 
             // attempt to execute the sql statement

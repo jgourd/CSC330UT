@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                     mysqli_stmt_bind_result($stmt, $id, $username, $encrypted_password);
                     if (mysqli_stmt_fetch($stmt))
                     {
-                        if (openssl_decrypt($encrypted_password, "aes-256-ctr", "MySymmetricKey") == $password)
+                        if (openssl_decrypt($encrypted_password, "aes-256-cbc", "MySymmetricKey") == $password)
                         {
                             // the password is correct; start a new session
                             session_start();

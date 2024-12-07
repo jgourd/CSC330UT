@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
             // set parameters
             $param_username = $username;
-            $param_password = openssl_encrypt($password, "aes-256-ctr", "MySymmetricKey");
+            $param_password = openssl_encrypt($password, "aes-256-cbc", "MySymmetricKey");
 
             // attempt to execute the sql statement
             if (mysqli_stmt_execute($stmt))
