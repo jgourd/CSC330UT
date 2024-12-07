@@ -3,7 +3,7 @@ from bcrypt import checkpw
 DICTIONARY = "words.txt"
 
 # enter the DB hash below
-db_hash = "";
+db_hash = ""
 
 # grab the dictionary words
 with open(DICTIONARY, "r") as f:

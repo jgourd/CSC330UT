@@ -3,9 +3,9 @@ from hashlib import sha256
 DICTIONARY = "words.txt"
 
 # enter the DB hash below
-db_password = "";
+db_password = ""
 # enter the DB salt below
-db_salt = "";
+db_salt = ""
 
 # grab the dictionary words
 with open(DICTIONARY, "r") as file:

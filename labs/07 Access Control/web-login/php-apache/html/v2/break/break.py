@@ -2,10 +2,10 @@ from Cryptodome.Cipher import AES
 from Cryptodome.Util.Padding import unpad
 from base64 import b64decode
 
-DICTIONARY = "words.txt";
+DICTIONARY = "words.txt"
 
 # enter the DB password below
-db_password = "";
+db_password = ""
 
 # grab the dictionary words
 with open(DICTIONARY, "r") as file:
