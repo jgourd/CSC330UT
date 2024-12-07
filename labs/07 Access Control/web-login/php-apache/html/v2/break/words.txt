@@ -1,5 +1,9 @@
 key
 symmetric
 superman
+amazon
+Google
+frenchonionsoupisgood
+butjalapenocheesesoupisbetter
 MySymmetricKey
 racecar
