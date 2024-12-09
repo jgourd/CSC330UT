@@ -14,6 +14,7 @@ Vagrant.configure("2") do |config|
   end
 
 #  config.vm.network "forwarded_port", id: "http", guest: 80, host: 8080
+#  config.vm.network "forwarded_port", id: "http", guest: 31337, host: 31337
 #  config.vm.network "public_network"
 
   config.vm.provision "shell", inline: "cd ~/Downloads/CSC330UT && git pull", privileged: false
