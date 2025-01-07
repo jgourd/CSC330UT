@@ -27,6 +27,9 @@ ftp.dir(files.append)
 # exit the FTP server
 ftp.quit()
 
+# sort the files by filename, ignoring case
+#files = sorted(files, key=lambda x: x[56].lower())
+
 # display the folder contents
 for f in files:
 	print(f)
