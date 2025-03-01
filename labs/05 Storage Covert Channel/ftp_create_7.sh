@@ -48,8 +48,10 @@ rm -rf "$DIR"/*
 for ((i=0; i<${#msg}; i++)); do
     f=${sorted_files[$i]}			# the current file
     l=${msg:$i:1}				# the current letter
+#    echo -n "Working on $l ($f): "
     n=`echo "$l" | xxd -u -p | cut -c -2`	# the hex (ASCII) value of the current letter
     b=`echo "obase=2; ibase=16; $n" | bc`	# the binary value of the current letter
+#    echo "$n"
 
     # prepend 0s to set the number to 9 digits (for permissions)
     while ((${#b} < 9)); do
