@@ -32,6 +32,7 @@ if (LIST_METHOD == 1):
     ftp.dir(files.append)
 elif (LIST_METHOD == 2):
     # use "LIST -a" to also include hidden items
+    # in this case, you may need to remove the first two items in the listing (the current and parent directory entries)
     ftp.retrlines("LIST", files.append)
 # exit the FTP server
 ftp.quit()
