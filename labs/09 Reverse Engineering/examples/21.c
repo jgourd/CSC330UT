@@ -10,7 +10,7 @@ void read_three_nums_from_line(char *input, int *nums)
 
     if (n < 3)
     {
-        printf("%d: Failure.\n", n);
+        printf("Failure on input.\n");
         exit(-1);
     }
 }
@@ -20,16 +20,16 @@ void check(char* input)
     int nums[3];
 
     read_three_nums_from_line(input, nums);
-    if (nums[0] < 10)
+    if (nums[0] < 16)
     {
-        printf("3: Failure.\n");
+        printf("Failure on 1.\n");
         exit(-1);
     }
     for (int i=1; i<3; i++)
     {
-        if (nums[i] != nums[i-1] * 3 + 1)
+        if (nums[i] != nums[i-1] * 2 + 7)
         {
-            printf("3: Failure on %d.\n", i+1);
+            printf("Failure on %d.\n", i+1);
             exit(-1);
         }
     }
@@ -45,7 +45,7 @@ char *read_line(void)
 
     if (!fgets(input, sizeof(input), stdin))
     {
-        printf("0: Failure.\n");
+        printf("Failure on 1.\n");
         exit(-1);
     }
 
