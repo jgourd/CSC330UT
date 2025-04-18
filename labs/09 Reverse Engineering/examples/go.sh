@@ -10,13 +10,13 @@ if [ ! -z "$1" ]; then
     fn=$(basename -- "$1")
     fe="${fn##*.}"
     fn="${fn%.*}"
-    gcc -o $fn $fn.$fe -lssl -lcrypto
+    gcc -O0 -fno-stack-protector -no-pie -o $fn $fn.$fe -lssl -lcrypto
 # compile all examples
 else
     for f in *.c; do
         fn=$(basename -- "$f")
         fe="${fn##*.}"
         fn="${fn%.*}"
-        gcc -o $fn $fn.$fe -lssl -lcrypto
+        gcc -O0 -fno-stack-protector -no-pie -o $fn $fn.$fe -lssl -lcrypto
     done
 fi
