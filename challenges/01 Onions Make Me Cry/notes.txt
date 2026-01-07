@@ -1,0 +1,20 @@
+Test your Binary program with:
+-binary1.txt
+-binary2.txt
+
+Test your Caesar program with:
+-caesar1.txt: The shift is 17 and the alphabet is ABCDEFGHIJKLMNOPQRSTUVWXYZ zyxwvutsrqponmlkjihgfedcba
+-caesar2.txt: The shift is 33 and the alphabet is aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ0123456789-_ =
+
+Test your Vigenere program with:
+-vigenere1.txt: The key is abc123., and the alphabet is aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ0123456789-_ =
+-vigenere2.txt: The key is myKEYis31337 and the alphabet is ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,=_zyxwvutsrqponmlkjihgfedcba
+
+Test your XOR program with:
+-ciphertext1.bin: The key is key1.bin
+-ciphertext2.bin: The key is key2.bin
+-ciphertext3.bin: The key is key3.bin
+-ciphertext4.bin: The key is key4.bin (note that the key is smaller than the ciphertext, so it will need to be repeated as needed)
+
+Test everything (!) with:
+-super input.txt
